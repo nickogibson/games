@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 
-/* Thanks for checking out this little diceroller app. Try it in action on NickoGibson.Games.io	 */
+/* Thanks for checking out this little diceroller app. Try it in action on ickogibson.github.io/games.io/	 */
 	
 	
 // A class to make a dungeon dice.

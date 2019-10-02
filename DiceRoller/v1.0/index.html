@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="jquery-3.3.1.js" ></script>
+		<script type="text/javascript" src="diceroller.js"></script>
+		<link type="text/css" rel="stylesheet" href="diceroller.css">
+
+		<title>Dice Roller - A d20 dice app by Nicko Gibson</title>
+<!-- 	Thanks for checking out this little diceroller app. Try it in action on NickoGibson.Games.io  -->
+	</head>
+	
+	<body>
+	<div class="page">
+		<h2>The Dice Roller.</h2>		
+		<div class="field">
+						<div align="center" class="clear">Clear Hand</div>
+						<div align="center" class="rButton"><b>Roll Now</b></div>
+			<div class="hand">
+				<h3><table>
+					<tr>
+						<td>Dice In Hand: </td><td id="first"></td><td id="second"></td><td id="third"></td><td id="fourth"></td><td id="fifth"></td><td id="sixth"></td>
+					</tr>
+				</table></h3>				
+			</div>
+			<div id="log" ><h3>Rolls:</h3>
+				<ul>
+				<li id="rolling"></li>
+				</ul>
+			</div>
+		</div>
+		<div class="rightcontainer">
+				<div id="dicebox"><h3>Select Your Dice</h3>
+				<table>
+					<tr>
+						<td><div align="center"><b>d4</b></div><div class="button" id="qd4"><img class ="img" src="images/dnd-d4-transparent.gif"></div> <div class="add" id="d4">Add 1d4 to Hand</div></td>
+						<td><div align="center"><b>d6</b></div><div class="button" id="qd6"><img src="images/d6-dice-transparent.gif" /></div><div class="add" id="d6">Add 1d6 to Hand</div></td>
+						<td><div align="center"><b>d8</b></div><div class="button" id="qd8"><img src="images/d8.gif" /></div><div class="add" id="d8">Add 1d8 to Hand</div></td>
+					</tr>
+					<tr>
+						<td><div align="center"><b>d10</b></div><div class="button" id="qd10"><img src="images/d10-dice.png" /></div><div class="add" id="d10"> Add to Hand</div></td>
+						<td><div align="center"><b>d12</b></div><div class="button" id="qd12"><img src="images/d12-dice.gif" /></div><div class="add" id="d12">Add to Hand</div></td>
+						<td><div align="center"><b>d20</b></div><div class="button" id="qd20"><img src="images/D20-transparent.gif"></div><div class="add" id="d20">Add to Hand</div></td>
+					</tr>		
+				</table>
+								<div class="rButton" align="left"><b>Roll Now</b></div>
+				<div id="description" align="right">Rolls all the dice you have in hand.</div>
+				</div>		
+
+			</div>
+
+			<br>
+			<div>
+		Thanks for checking out this little diceroller app, written by <a href="http://about.me/nickogibson">Nicko Gibson</a><br />
+		</div>		
+	</div>
+	</body>
+</html>

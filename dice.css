@@ -1,0 +1,489 @@
+
+body{
+//width:100%;
+//height:100%;
+font-size : 20px;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+//font:normal normal 30px Yanone Kaffeesatz;
+
+}
+
+h1{
+font-size : 7.5vw;
+align: center;
+//text-transform: uppercase;
+color:sienna;
+//background: #FFFFFF;
+text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+
+}
+
+#description{
+text-align:center;
+}
+
+#handOuter{
+ 	max-width:100%;
+ 	//margin-bottom:1%;
+    margin-top:2%;
+    	position:sticky;
+    	top:2px;
+}
+#hand{
+    display: block;
+	background-color: #fff1cf;
+    position:relative;
+	max-width:100%;
+	height: 15%;
+	max-height:80px;
+	min-height:35px;
+	text-align:center;
+
+	text-indent: 5px;
+    z-index:999;
+   // text-justify: inter-word;
+
+	-moz-box-shadow: 0px -5px 5px 5px #888;
+	-webkit-box-shadow: 0px -5px 5px 5px#888;
+	box-shadow: 0px -5px 5px 5px #888;
+}
+
+#handName{
+width:55px;
+max-width: 40%;
+cursor:pointer;
+height:100%;
+overflow:hidden;
+
+  background: #fff1cf;
+  white-space: nowrap;
+text-overflow: ellipsis;
+  // -webkit-background-clip: text;
+
+}
+
+
+.handItem{
+font-size: 4.5vw;
+}
+
+#handColon{
+//display:table-cell;
+//column-width:3px;
+//align:left;
+}
+#handColon td{
+//column-width:3px;
+}
+
+#saved{
+position:relative;
+float:left;
+z-index:999;
+}
+#saved p{
+position:absolute;
+top:0px;
+font-size:18px;
+z-index:999;
+background: lightgreen;
+}
+
+#modifiers{
+    //position : absolute;
+    font-size : 15dp;
+    display:table-cell;
+    vertical-align: middle;
+
+    cursor:pointer;
+    //width:10.5vw;
+    //max-width:17%;
+    border-style: none double outset double;
+    //text-indent:3px;
+    text-align:center;
+    //padding-left:-2px;
+    margin-left:20px;
+    background:teal;
+    z-index:1000;
+}
+
+#modifiers table{
+padding-left:10px;
+}
+
+#modsWrapper{
+horizontal-align:middle;
+margin:auto;
+}
+input[type=number]{
+//display:inherit;
+width:20vw;
+max-width: 23%
+}
+
+#modsButton{
+//display:inherit;
+}
+
+#playersContainer{
+    float:right;
+    display:none;
+    position: absolute;
+    right:1%;
+    margin-top:7px;
+    z-index:998;
+    width:97%;
+    height:98%;
+    max-width:300px;
+    max-height:500px;
+    //overflow:auto;
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: green;
+}
+
+
+}
+
+#closeWindow{
+    text-align:left;
+    display:inherit;
+    z-index:999;
+    background-color:#f9f9f9;
+	border-radius:2px;
+	border:1px solid #dcdcdc;
+	color:#666666;
+	font-size:15px;
+	font-weight:bold;
+	padding:2px 2px;
+}
+
+#playerBoxName{
+text-align:center;
+margin:auto;
+display:inherit;
+margin-bottom:-15px;
+clear:both;
+}
+
+#players{
+display:inherit;
+max-height:500px;
+padding-top:3px;
+padding-bottom:3px;
+overflow:auto;
+background: lightgreen;
+border-style: groove;
+}
+
+#players p{
+display:inherit;
+font-size: 7vw;
+z-index:999;
+
+}
+
+.playerDiv{
+//display:inline;
+margin-left:1vw;
+text-align:center;
+overflow:hidden;
+  white-space: nowrap;
+text-overflow: ellipsis;
+}
+
+.playerNode{
+display:inline;
+text-align:center;
+}
+
+.deleter{
+position:relative;
+float:right;
+display: inline;
+z-index:999;
+margin-left:3%;
+
+}
+
+
+#diceBoxLabel{
+font-size : 15dp;
+//display:inline;
+width:30%;
+cursor:pointer;
+border-style: outset double none double;
+//text-indent:3px;
+text-align:center;
+padding-left:-2px;
+margin:auto;
+background:teal;
+
+}
+
+#boxDragger{
+display:inline;
+//margin-top:10px;
+}
+
+#arrows1{
+float:left;
+padding-left:2px;
+padding-top:7px;
+}
+#arrows2{
+float:right;
+padding-right:2px;
+padding-top:7px;
+}
+
+#boxOuterWrapper{
+width: 100%;
+    position:relative;
+ //   display:table;
+    margin: auto;
+ //   padding:0 0 0 -10px;
+    max-width: 520px;
+    max-height:98%;
+
+}
+
+#diceMenu{
+    border:outset 20px;
+    width: 100%;
+    margin:auto;
+    max-width: 400px;
+    max-height:89%;
+    font-size:90%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px 0px;
+    background:sienna;
+    -moz-box-shadow: inset 0 0 10px 3px#794D14;
+    -webkit-box-shadow: inset 0 0 10px 3px#794D14;
+    box-shadow: inset 0 0 10px 10px #794D14;
+}
+
+#diceMenuScaler{
+    position:absolute;
+    left:20px;
+    border-style: double none double outset;
+    font-size : 15px;
+    width:15px;
+    height:80px;
+    text-align:center;
+    //margin-right:30px;
+    margin-top:125px;
+    background:grey;
+}
+
+#menuScalerRight{
+
+}
+
+.diceButton {
+width:30%;
+max-width:133px;
+overflow:hidden;
+display: inline-block;
+}
+
+.diceButton img {
+width:99%;
+max-width:132px;
+}
+
+.addDice{
+background:teal;
+width:100%;
+opacity:0.5px;
+}
+.removeDice{
+background:silver;
+width:50%;
+height:30px;
+max-width:70px;
+float:right;
+}
+
+#menu{
+    position:sticky;
+    top:1px;
+    width: 95%;
+    //max-width: 320px;
+   // margin: auto;
+    text-align: center;
+    margin-top:1%;
+    margin-bottom:1%;
+}
+
+.rollButtons{
+	-moz-box-shadow:inset 0px 1px 0px 0px #a4e271;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #a4e271;
+	box-shadow:inset 0px 1px 0px 0px #a4e271;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid sienna;
+//	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+//	font-size:1.7vw;
+	font-weight:bold;
+	padding:4px 18px;
+	text-decoration:none;
+
+}
+
+.rollButtons:active {
+	position:relative;
+	top:1px;
+}
+
+#roll{
+    display:none;
+    position:relative;
+    height:100%;
+    max-height:100%;
+    text-align:center;
+    text-shadow:0px 1px 0px #528009;
+    vertical-align: middle;
+    float: right;
+    border:1px solid green;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #89c403), color-stop(1, #77a809));
+	background:-moz-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:-webkit-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:-o-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:-ms-linear-gradient(top, #89c403 5%, #77a809 100%);
+	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#89c403', endColorstr='#77a809',GradientType=0);
+	background-color:#89c403;
+}
+
+#roll:hover{
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77a809), color-stop(1, #89c403));
+	background:-moz-linear-gradient(top, #77a809 5%, #89c403 100%);
+	background:-webkit-linear-gradient(top, #77a809 5%, #89c403 100%);
+	background:-o-linear-gradient(top, #77a809 5%, #89c403 100%);
+	background:-ms-linear-gradient(top, #77a809 5%, #89c403 100%);
+	background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77a809', endColorstr='#89c403',GradientType=0);
+	background-color:#77a809;
+}
+
+#newHand, #loadHand{
+color:black;
+}
+#newHand{
+float:left;
+}
+
+#loadHand{
+float:right;
+}
+
+#modsButton{
+color:green;
+}
+
+#rolls{
+
+}
+
+#rolling p{
+   display: table;
+   margin:auto;
+   border-spacing: 5px;
+}
+
+#rolling hr{
+   display: block;
+   //margin:auto;
+   width:90vw;
+
+}
+
+.rolledName{
+text-align:center;
+text-indent:-4%;
+}
+
+.message{
+text-align:center;
+text-indent:0%;
+}
+
+@media screen and (max-width: 468px) {
+
+   /*css specific to small screens under Xpx width here*/
+    #hand{
+ //   height:6.5vh;
+    }
+    .handItem{
+
+    font-size: 5vw;
+    }
+
+   #diceMenu{
+       border:outset 6px;
+       width: 93%;
+
+   }
+
+   #modifiers, #diceBoxLabel{
+   	font-size:3.5vw;
+   	height:20px;
+
+   }
+   #diceBoxLabel{
+   font-size:4.5vw;
+   }
+
+   .rollButtons{
+       	font-size:2.5vw;
+
+   }
+
+
+    #roll{
+    font-size:2.6vw;
+    margin-top:0px;
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+   #modifiers{
+        font-size : 12dp;
+    //    width:12.5vw;
+    //    max-width:20%;
+    }
+
+    #diceMenuScaler{
+        display:none;
+    }
+    #boxOuterWrapper{
+        display:block;
+        //margin:none;
+    }
+
+    #playersContainer{
+        position:fixed;
+        top:0px;
+        z-index: 1001;
+    }
+
+}

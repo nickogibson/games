@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Dice Roller</title>
+        <meta charset="UTF-8">
+        <script src="js.cookie.js"></script>
+    <script src="diceroller.js"></script>
+    <link rel="stylesheet" type="text/css" href="dice.css">
+        <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300,700' rel='stylesheet' type='text/css'/>
+
+
+    </head>
+
+    <body>
+    <div id="menu" >
+        <button onclick="newHand()" class="rollButtons" id="newHand">New Hand</button>
+        <button onclick="loadPlayers()" class="rollButtons" id="loadHand">Load</button>
+    </div>
+
+    <h1 align="center">THE d20 TOOLBOX</h1>
+
+
+
+    <div id="description">
+        <p>
+            Add some dice to your hand to start rolling.
+        </p>
+        <p>
+            Click "Hand" to save a player's hand.
+        </p>
+
+    </div>
+
+    <div id="rolls">
+        <p id="rolling">
+        </p>
+    </div>
+
+    <div id="handOuter">
+        <div id="hand">
+            <span id="handName" class="handItem" contenteditable="true" onclick="document.execCommand('selectAll',false,null)" @blur="saveHand()">Hand</span> <span  id="handColon" class="handItem">:</span>
+            <span id="zeroth" class="handItem">Empty </span> <span id="first" class="handItem"></span><span id="second" class="handItem"></span><span id="third" class="handItem"></span><span id="fourth" class="handItem"></span><span id="fifth" class="handItem"></span><span id="sixth" class="handItem"></span>
+
+
+            <div id="saved"></div>
+            <div id="roll" class="rollButtons" onclick="roll()" >Roll</div>
+        </div>
+        <div id="modifiers" onclick="modsToggle()" >Add Modifiers
+
+        </div>
+        <div id="modsWrapper" >
+
+            <button value="ok" id="modsButton" class="rollButtons"  onclick="saveMods() ">Ok</button><br />
+            <form id="modsForm" >
+                <div>d4+ <input type="number" name="d4Mod"  value="0" onclick="document.execCommand('selectAll',false,null)"/></div>
+                <div>d6+ <input type="number"  name="d6Mod" value="0" onclick="document.execCommand('selectAll',false,null)"/></div>
+                <div>d8+<input type="number"  name="d8Mod" value="0" onclick="document.execCommand('selectAll',false,null)"/></div>
+                <div>d10+ <input type="number"  name="d10Mod" value="0" onclick="document.execCommand('selectAll',false,null)"/></div>
+                <div>d12 + <input type="number"  name="d12Mod" value="0" onclick="document.execCommand('selectAll',false,null)"/></div>
+                <div>d20+ <input type="number"  name="d20Mod" value="0"   onclick="document.execCommand('selectAll',false,null)"/></div>
+
+            </form>
+
+        </div>
+    </div>
+
+
+
+    <div id="playersContainer">
+        <div id="closeWindow"> <div id="playerBoxName">Players</div>  <input type="button"  value="x" onClick="closeP()"></div>
+        <div id="players"></div>
+    </div>
+
+    <div id="boxOuterWrapper">
+        <div id="diceBoxLabel" onclick="boxToggle()">
+            <span id="arrows1" >↕</span>  Dice Box  <span id="arrows2"  >↕</span>️
+        </div>
+
+        <div id="diceMenuScaler" onclick="boxScaler()">↔<br />W<br />I<br />D<br />E</div>
+        <div id="diceMenu">
+            <div class="diceButton">d4  <button class="removeDice" onclick="d4Minus()">-</button>  <button class="button addDice" onclick="d4Plus()" >+  <img src="images/d4.png"></button></div>
+            <div class="diceButton">d6  <button class="removeDice" onclick="d6Minus()">-</button>  <button class="button addDice" onclick="d6Plus()">+ <img src="images/d6.png"></button> </div>
+            <div class="diceButton">d8 <button class="removeDice" onclick="d8Minus()">-</button>  <button class="button addDice" onclick="d8Plus()">+ <img src="images/d8.png"> </button> </div>
+            <div class="diceButton">d10 <button class="removeDice" onclick="d10Minus()">-</button> <button class="button addDice" onclick="d10Plus()">+ <img src="images/d10.png"> </button> </div>
+            <div class="diceButton">d12 <button class="removeDice" onclick="d12Minus()">-</button><button class="button addDice" onclick="d12Plus()">+  <img src="images/d12.png"> </button></div>
+            <div class="diceButton">d20 <button class="removeDice" onclick="d20Minus()">-</button><button class="button addDice" onclick="d20Plus()">+  <img src="images/d20.png"></button> </div>
+        </div>
+        <div id="bottom"></div>
+    </div>
+
+    </body>
+
+</html>
